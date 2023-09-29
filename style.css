@@ -26,5 +26,6 @@
 		padding-top: 4px;
 		white-space: wrap !important;
 		max-width: calc(100vw - 46px);
+		overflow: hidden;
 	}
 }

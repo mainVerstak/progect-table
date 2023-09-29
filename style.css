@@ -19,13 +19,12 @@
 	}
 	.table-two-colone tbody > tr > td {
 		display: block;
-		max-width: 80vw;
-		background: #111;
-		border: 1px solid #fff;
+		max-width: calc(100vw - 30px);
 	}
 	.table-two-colone tbody > tr > td span {
 		display: block;
 		padding-top: 4px;
 		white-space: wrap !important;
+		max-width: calc(100vw - 46px);
 	}
 }

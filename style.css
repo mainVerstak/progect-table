@@ -24,5 +24,6 @@
 	.table-two-colone tbody > tr > td span {
 		display: block;
 		padding-top: 4px;
+		white-space: wrap !important;
 	}
 }

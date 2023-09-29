@@ -4,7 +4,9 @@
 		content: attr(data-label);
 		font-weight: 700;
 	}
-
+	.table-two-colone {
+		overflow: visible !important;
+	}
 	.table-two-colone thead {
 		display: none;
 	}

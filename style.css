@@ -1,0 +1,27 @@
+
+@media (max-width: 767px) {
+	._table-label::before {
+		content: attr(data-label);
+		font-weight: 700;
+	}
+
+	.table-two-colone thead {
+		display: none;
+	}
+	.table-two-colone * {
+		white-space: wrap !important;
+	}
+
+	.table-two-colone tbody > tr {
+		display: block;
+	}
+	.table-two-colone tbody > tr > td {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		min-width: 400px;
+	}
+	.table-two-colone tbody > tr > td span {
+		flex: 0 0 65%;
+	}
+}

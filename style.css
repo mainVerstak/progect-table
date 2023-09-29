@@ -13,7 +13,7 @@
 	.table-two-colone * {
 		/*white-space: wrap !important;
 		word-wrap: break-word !important;*/
-		white-space: normal;
+		white-space: normal !important;
 	}
 
 	.table-two-colone tbody > tr {
@@ -21,14 +21,13 @@
 	}
 	.table-two-colone tbody > tr > td {
 		display: block;
-		background: #000;
 		max-width: calc(100vw - 30px);
 	}
 	.table-two-colone tbody > tr > td span {
 		display: block;
 		padding-top: 4px;
-		word-wrap: break-word !important;
 		max-width: calc(100vw - 46px);
 		overflow: hidden;
+		white-space: normal !important;
 	}
 }

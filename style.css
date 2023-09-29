@@ -16,12 +16,10 @@
 		display: block;
 	}
 	.table-two-colone tbody > tr > td {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-		min-width: 400px;
+		display: block;
 	}
 	.table-two-colone tbody > tr > td span {
-		flex: 0 0 65%;
+		display: block;
+		padding-top: 4px;
 	}
 }

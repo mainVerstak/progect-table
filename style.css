@@ -19,6 +19,7 @@
 	}
 	.table-two-colone tbody > tr > td {
 		display: block;
+		max-width: 100%;
 	}
 	.table-two-colone tbody > tr > td span {
 		display: block;

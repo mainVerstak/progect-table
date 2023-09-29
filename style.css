@@ -12,6 +12,7 @@
 	}
 	.table-two-colone * {
 		white-space: wrap !important;
+		word-wrap: break-word !important;
 	}
 
 	.table-two-colone tbody > tr {

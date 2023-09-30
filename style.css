@@ -1,33 +1,41 @@
 
+
+.table-responsive tbody > tr > td span {
+	display: none;
+}
 @media (max-width: 767px) {
-	._table-label::before {
+	/*._table-label::before {
 		content: attr(data-label);
 		font-weight: 700;
-	}
-	.table-two-colone {
+	}*/
+	.table-responsive {
 		overflow: visible !important;
 	}
-	.table-two-colone thead {
+	.table-responsive thead {
 		display: none;
 	}
-	.table-two-colone * {
+	.table-responsive * {
 		/*white-space: wrap !important;
 		word-wrap: break-word !important;*/
 		white-space: normal !important;
 	}
 
-	.table-two-colone tbody > tr {
+	.table-responsive tbody > tr {
 		display: block;
 	}
-	.table-two-colone tbody > tr > td {
+	.table-responsive tbody > tr > td {
 		display: block;
 		max-width: calc(100vw - 30px);
 	}
-	.table-two-colone tbody > tr > td span {
+	.table-responsive tbody > tr > td span {
 		display: block;
-		padding-top: 4px;
+		padding-bottom: 4px;
 		max-width: calc(100vw - 46px);
 		overflow: hidden;
 		white-space: normal !important;
+		font-weight: 700;
+	}
+	.table-responsive__label {
+		margin-bottom: 2px;
 	}
 }

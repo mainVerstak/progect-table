@@ -23,7 +23,7 @@ if (TableResponsives) {
 			let tableResponsiveHedarItem = tableResponsiveBodyTrs[0].querySelectorAll('th');
 
 			for (let i = 0; i < tableResponsiveHedarItem.length; i++) {
-				tableResponsiveHedarValues.push(tableResponsiveHedarItem[i].textContent);
+				tableResponsiveHedarValues.push(tableResponsiveHedarItem[i].innerHTML);
 			}
 
 			tableNumber = 1;

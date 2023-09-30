@@ -11,7 +11,8 @@
 	.table-responsive {
 		overflow: visible !important;
 	}
-	.table-responsive thead {
+	.table-responsive thead,
+	.table-responsive tr.active {
 		display: none;
 	}
 	.table-responsive * {

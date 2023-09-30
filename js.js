@@ -8,20 +8,28 @@ if (TableResponsives) {
 		let tableResponsive = TableResponsives[i];
 
 		let tableResponsiveHedar = tableResponsive.querySelector('thead');
-		let tableResponsiveHedarItem = tableResponsiveHedar.querySelectorAll('th');
-		let tableResponsiveHedarValues = new Array();
-
-		for (let i = 0; i < tableResponsiveHedarItem.length; i++) {
-			tableResponsiveHedarValues.push(tableResponsiveHedarItem[i].textContent);
-		}
-		/*for (let iTwo = 0; iTwo < tableResponsiveHedarValues.length; iTwo++) {
-			alert(tableResponsiveHedarValues[iTwo]);
-		}*/
-
 		let tableResponsiveBody = tableResponsive.querySelector('tbody');
 		let tableResponsiveBodyTrs = tableResponsiveBody.querySelectorAll('tr');
+		let tableResponsiveHedarValues = new Array();
+		let tableNumber = 0;
 
-		for (let i2 = 0; i2 < tableResponsiveBodyTrs.length; i2++) {
+		if (tableResponsiveHedar) {
+			let tableResponsiveHedarItem = tableResponsiveHedar.querySelectorAll('th');
+
+			for (let i = 0; i < tableResponsiveHedarItem.length; i++) {
+				tableResponsiveHedarValues.push(tableResponsiveHedarItem[i].textContent);
+			}
+		} else {
+			let tableResponsiveHedarItem = tableResponsiveBodyTrs[0].querySelectorAll('th');
+
+			for (let i = 0; i < tableResponsiveHedarItem.length; i++) {
+				tableResponsiveHedarValues.push(tableResponsiveHedarItem[i].textContent);
+			}
+
+			tableNumber = 1;
+		}
+
+		for (let i2 = tableNumber; i2 < tableResponsiveBodyTrs.length; i2++) {
 			let tableResponsiveBodyTr = tableResponsiveBodyTrs[i2];
 			let tableResponsiveTds = tableResponsiveBodyTr.querySelectorAll('td');
 
